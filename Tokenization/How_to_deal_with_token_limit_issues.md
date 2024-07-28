@@ -142,10 +142,4 @@ RAG combines retrieval-based and generative models to enhance the quality and ac
 
 Depending of the application, RAG can removes the need for the vast majority of the context in the prompt, decreasing your amount of tokens of input. However, the final results depend greatly on the search relevancy. 
 
-  
-
-https://github.com/lanchuhuong/Langchain-tutorials/blob/main/chains/DocumentChain%20Types.ipynb
-https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them
-https://www.youtube.com/watch?v=f9_BWhCI4Zo
-https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/fm-context-length.html?context=wx
-https://deepchecks.com/5-approaches-to-solve-llm-token-limits/
+ 
