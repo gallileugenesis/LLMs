@@ -25,11 +25,25 @@ Before we proceed with the description of some methods to overcome the token lim
 
 In the context of natural language processing (NLP) and LLMs, tokens can be described as fragments of language. They are the basic units of text that a model processes to understand and generate text. We tend to imagine that each word represents a token. But for most models this is almost never true. A token can be as short as one character or as long as one word. But tokens can also include trailing spaces, numbers, special characters, punctuation marks, and even sub-words. 
 
-Examples:
+### Types of Tokenization
 
-- **Word-level tokenization:** "Hello, world!" -> ["Hello", ",", "world", "!"]
-- **Subword tokenization:** "unhappiness" -> ["un", "happiness"]
-- **Character-level tokenization:** "Hello" -> ["H", "e", "l", "l", "o"]
+1. **Word-level tokenization:** Splits text into words based on spaces and punctuation.
+
+Examples: 
+- "Hello, world!" -> ["Hello", ",", "world", "!"]
+- "Tokenization is important." -> ["Tokenization", "is", "important", "."]
+
+2. **Subword tokenization:** Breaks words into subwords or even individual characters. Useful for handling out-of-vocabulary words. Common algorithms: Byte Pair Encoding (BPE), WordPiece, SentencePiece.
+
+Examples: 
+- "unhappiness" -> ["un", "happiness"]
+- "Tokenization" -> ["Tok", "en", "ization"]
+
+3. **Character-level tokenization:** Splits text into individual characters.
+
+Examples: 
+- "Hello" -> ["H", "e", "l", "l", "o"]
+- "Token" -> ["T", "o", "k", "e", "n"]
 
 This means that token generation (tokenization) and tokens counting varies a lot for different languages and different models. For example, for [OpenAI](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them) models and English language:
 
